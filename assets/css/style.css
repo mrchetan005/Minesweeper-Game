@@ -80,10 +80,10 @@ button {
 	margin: 2px;
 	transition: all 0.3s ease;
 	transition-property: background-color, transform;
-	background: linear-gradient(to top, #fdfaf6 10%, #064420 115%);
+	background: linear-gradient(to top, #f0e5d7 0%, #0c3b1f 125%);
 }
 .green {
-	background: linear-gradient(to top, #2ec1ac 10%, #eff48e 115%);
+	background: linear-gradient(to top, #2ad4bb 10%, #f2f885 115%);
 }
 .bomb-background {
 	background-image: url("https://img.icons8.com/emoji/48/000000/bomb-emoji.png");
