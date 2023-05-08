@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	overflow: hidden;
+	font-family: "Bangers", cursive;
+	letter-spacing: 2px;
+}
+
+:root {
+	height: 100vh;
+	width: 100vw;
+	background: no-repeat;
+	background-size: 100% 100%;
+	background-image: url(https://img.freepik.com/free-photo/blue-dark-gradient-texture-wall-background_28629-888.jpg?size=626&ext=jpg);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-size: 100% 100%;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 12vh;
+	width: 100%;
+	color: #8bd77b;
+	font-size: 3.75rem;
+	text-decoration: underline overline;
+	letter-spacing: 0.25rem;
+}
+
+.game-score {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	margin: auto;
+	font-size: 1.875rem;
+	margin-block: 0.625rem;
+	color: #b63f3f;
+}
+
+#gameScore {
+	margin-left: 8px;
+}
+
+.grid-container {
+	height: 60vh;
+	width: 50%;
+	margin-bottom: 0;
+	cursor: pointer;
+	display: grid;
+	grid-template: repeat(9, 1fr) / repeat(9, 1fr);
+}
+
+.result-display {
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bolder;
+}
+
+button {
+	font-size: 1.25rem;
+	color: red;
+	cursor: pointer;
+	margin: 0 auto;
+	background: black;
+}
+
+.box {
+	margin: 2px;
+	transition: all 0.3s ease;
+	transition-property: background-color, transform;
+	background: linear-gradient(to top, #fdfaf6 10%, #064420 115%);
+}
+.green {
+	background: linear-gradient(to top, #2ec1ac 10%, #eff48e 115%);
+}
+.bomb-background {
+	background-image: url("https://img.icons8.com/emoji/48/000000/bomb-emoji.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: red;
+}
+
+@media (max-width: 45em) {
+	html {
+		font-size: 60%;
+	}
+	.grid-container {
+		width: 80%;
+	}
+}
+
+@media (max-width: 30em) {
+	.grid-container {
+		width: 96%;
+	}
+}
+
+@media (max-width: 75em) {
+	.grid-container {
+		width: 75%;
+	}
+}
